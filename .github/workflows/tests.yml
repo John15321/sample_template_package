@@ -27,6 +27,6 @@ jobs:
                   virtualenvs-in-project: true
             - name: Run tests
               run: |
-                  poetry shell
+                  poetry shell --no-interaction
                   poetry install --only dev
                   tox -e test
