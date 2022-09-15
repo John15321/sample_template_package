@@ -1,8 +1,7 @@
-# Sample Project
+Sample Project
+==============
 
-
-## Credits
-
+Credits
 ---
 
 This package was created with Cookiecutter, and the
