@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository code
-            - uses: actions/checkout@v2
+              uses: actions/checkout@v2
             - name: Install Python ${{ matrix.python-version }}
               uses: actions/setup-python@v4
               with:
@@ -26,7 +26,8 @@ jobs:
                   virtualenvs-in-project: false
                   installer-parallel: true
             - name: Run tests
-              run: poetry install --group dev
+              run: |
+                  poetry install --only dev
                   tox -e check_format
     check_format_markdown:
         name: 🖋 Check markdown files

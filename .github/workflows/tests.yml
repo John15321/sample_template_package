@@ -33,5 +33,5 @@ jobs:
                   key: pydeps-${{ hashFiles('**/poetry.lock') }}
             - name: Run tests
               run: |
-                  poetry install --group dev
+                  poetry install --only dev
                   tox -e test

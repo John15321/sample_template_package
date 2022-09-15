@@ -14,13 +14,13 @@ jobs:
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout repository code
-            - uses: actions/checkout@v2
+              uses: actions/checkout@v2
             - name: Install Python ${{ matrix.python-version }}
               uses: actions/setup-python@v4
               with:
                   python-version: "${{ matrix.python-version }}"
             - name: Install and configure Poetry
-            - uses: snok/install-poetry@v1
+              uses: snok/install-poetry@v1
               with:
                   version: 1.2.0
                   virtualenvs-create: true
@@ -28,5 +28,5 @@ jobs:
                   installer-parallel: true
             - name: Run tests
               run: |
-                  poetry install --group dev
+                  poetry install --only dev
                   tox -e install
