@@ -26,7 +26,7 @@ jobs:
                   virtualenvs-create: true
                   virtualenvs-in-project: false
                   installer-parallel: true
-            - name: Run tests
+            - name: Check installation procedure
               run: |
                   pip install tox
                   tox -e install
