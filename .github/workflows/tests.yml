@@ -27,4 +27,5 @@ jobs:
                   virtualenvs-in-project: false
                   installer-parallel: true
             - name: Run tests
-              run: tox -e test
+              run: |
+                tox -e test
