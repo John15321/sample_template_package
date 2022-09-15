@@ -28,4 +28,5 @@ jobs:
                   installer-parallel: true
             - name: Run tests
               run: |
+                  poetry install --group dev
                   tox -e test

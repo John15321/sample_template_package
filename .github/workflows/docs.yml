@@ -26,4 +26,6 @@ jobs:
                   virtualenvs-in-project: false
                   installer-parallel: true
             - name: Run tests
-              run: tox -e doc
+              run: 
+                poetry install --group dev
+                tox -e doc
