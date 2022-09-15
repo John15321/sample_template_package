@@ -5,8 +5,8 @@
         :align: center
 
     :Author: `Jan Bronicki <janbronicki@gmail.com>`_
-    :License: $MIT license
-    :Copyright: $MIT license
+    :License: MIT license
+    :Copyright: MIT license
 
 .. include:: ../README.rst
 

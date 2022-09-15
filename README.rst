@@ -2,7 +2,7 @@ Sample Project
 ==============
 
 Credits
----
+==========
 
 This package was created with Cookiecutter, and the
 `John15321/cookiecutter-poetic-python` project template.
