@@ -27,7 +27,7 @@ jobs:
                   installer-parallel: true
             - name: Run tests
               run: |
-                  poetry install --only dev
+                  pip install tox
                   tox -e check_format
     check_format_markdown:
         name: 🖋 Check markdown files
