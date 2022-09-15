@@ -2,7 +2,7 @@ name: 📦 Package
 on:
     pull_request:
     push:
-        branches: ["main", "main", "develop", "release"]
+        branches: ["main", "master", "develop", "release"]
 
 jobs:
     package:
