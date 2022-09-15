@@ -2,7 +2,7 @@ name: 🔨 Install dependencies
 on:
     pull_request:
     push:
-        branches: ["main", "develop", "release"]
+        branches: ["main", "main", "develop", "release"]
 
 jobs:
     cinstall:

@@ -2,7 +2,7 @@ name: 🧪 Tests
 on:
     pull_request:
     push:
-        branches: ["main", "develop", "release"]
+        branches: ["main", "main", "develop", "release"]
 
 jobs:
     test:
@@ -28,4 +28,4 @@ jobs:
                   installer-parallel: true
             - name: Run tests
               run: |
-                tox -e test
+                  tox -e test
