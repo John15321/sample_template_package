@@ -13,6 +13,7 @@ jobs:
         name: 🔨 Install dependencies
         runs-on: ${{ matrix.os }}
         steps:
+            - name: Checkout repository code
             - uses: actions/checkout@v2
             - name: Install Python ${{ matrix.python-version }}
               uses: actions/setup-python@v4

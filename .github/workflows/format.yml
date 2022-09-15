@@ -12,6 +12,7 @@ jobs:
         name: 👔 Check formatting
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repository code
             - uses: actions/checkout@v2
             - name: Install Python ${{ matrix.python-version }}
               uses: actions/setup-python@v4
@@ -30,7 +31,7 @@ jobs:
         name: 🖋 Check markdown files
         runs-on: ubuntu-latest
         steps:
-            - name: Check out code
+            - name: Checkout repository code
               uses: actions/checkout@v2
             - name: Markdown Linting Action
               uses: avto-dev/markdown-lint@v1.5.0
@@ -40,7 +41,7 @@ jobs:
         name: 🪦 Check toml files
         runs-on: ubuntu-latest
         steps:
-            - name: Check out code
+            - name: Checkout repository code
               uses: actions/checkout@v2
             - uses: actions-rs/toolchain@v1
               with:
