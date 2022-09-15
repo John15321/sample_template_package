@@ -49,6 +49,8 @@ jobs:
               with:
                   toolchain: stable
                   override: true
-            - uses: davidB/rust-cargo-make@v1
+            - name: Install cargo-make
+              uses: davidB/rust-cargo-make@v1
+            - name: Check toml formatting
               run: |
                   cargo make toml-fmt-check
