@@ -21,7 +21,7 @@ jobs:
             - name: Install and configure Poetry
               uses: snok/install-poetry@v1
               with:
-                  version: 1.2
+                  version: 1.2.0
                   virtualenvs-create: true
                   virtualenvs-in-project: false
                   installer-parallel: true
@@ -49,8 +49,7 @@ jobs:
               with:
                   toolchain: stable
                   override: true
-            - name: Install cargo-make
-              uses: davidB/rust-cargo-make@v1
             - name: Check toml formatting
               run: |
-                  cargo make toml-fmt-check
+                  cargo install taplo-cli
+                  taplo format --check
